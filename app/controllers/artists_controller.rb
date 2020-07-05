@@ -50,11 +50,11 @@ class ArtistsController < ApplicationController
   #   render template: 'songs/index'
   # end
 
-  def song
-    @artist = Artist.find(params[:id])
-    @song = Song.find(params[:song_id])
-    render template: 'songs/show'
-  end
+  # def song
+  #   @artist = Artist.find(params[:id])
+  #   @song = Song.find(params[:song_id])
+  #   render template: 'songs/show'
+  # end
 
   private
 
