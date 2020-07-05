@@ -1440,3 +1440,14 @@ Redirected to http://67.205.152.27:58320/artists/1/songs
 Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
 
 
+Started GET "/artists/1/songs" for 108.46.152.116 at 2020-07-05 16:12:05 +0000
+Cannot render console from 108.46.152.116! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 1]]
+  Rendered songs/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 16ms (Views: 8.8ms | ActiveRecord: 1.1ms)
+
+
