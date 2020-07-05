@@ -913,3 +913,14 @@ Processing by SongsController#index as HTML
 Completed 200 OK in 17ms (Views: 8.8ms | ActiveRecord: 1.3ms)
 
 
+Started GET "/artists/1/songs" for 108.46.152.116 at 2020-07-05 15:40:04 +0000
+Cannot render console from 108.46.152.116! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (<ActionController::Parameters {"controller"=>"songs", "action"=>"index", "artist_id"=>"1"} permitted: false>):
+  
+app/controllers/songs_controller.rb:3:in `index'
