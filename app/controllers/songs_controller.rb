@@ -1,5 +1,6 @@
 class SongsController < ApplicationController
   def index
+    raise params.inspect
     @songs = Song.all
   end
 
