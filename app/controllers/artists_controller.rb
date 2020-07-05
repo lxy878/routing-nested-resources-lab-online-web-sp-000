@@ -51,6 +51,7 @@ class ArtistsController < ApplicationController
   end
 
   def song
+    @artist = Artist.find(params[:id])
   end
 
   private
