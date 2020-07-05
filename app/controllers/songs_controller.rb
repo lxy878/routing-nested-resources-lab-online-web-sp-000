@@ -3,7 +3,7 @@ class SongsController < ApplicationController
     if params[:artist_id]
       artist = Artist.find(params[:artist_id])
       if artist
-
+        @song = artist.songs
       else
       end
     else
