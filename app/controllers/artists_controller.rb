@@ -45,7 +45,6 @@ class ArtistsController < ApplicationController
   end
 
   def songs_index
-    raise params.inspect
     @artist = Artist.find(params[:id])
     @songs = artist.songs
     render template: 'songs/index'
