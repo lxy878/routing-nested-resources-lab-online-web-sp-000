@@ -45,7 +45,7 @@ class ArtistsController < ApplicationController
   end
 
   def songs_index
-
+    
   end
 
   def song
