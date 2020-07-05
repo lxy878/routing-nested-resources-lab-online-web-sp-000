@@ -6,7 +6,7 @@ class SongsController < ApplicationController
     else
       @songs = Song.all
     end
-    
+
   end
 
   def show
